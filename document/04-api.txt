@@ -1,0 +1,11 @@
+auth
+    api/users/signup
+        post {email: string, password: string} 
+        purpose : sign up for an accout     
+    api/users/signin
+        post {email: string, password: string}
+        purpose : sign in to an existing account
+    api/users/signout
+        purpose : sign out
+    api/users/currentuser
+        purpose : return info about the user

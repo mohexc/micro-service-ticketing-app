@@ -1,0 +1,13 @@
+auth
+    signup/signin/signout
+tickets
+    ticket creation/editing
+    knows whether a ticket can be update
+orders
+    creation, editing
+expiration
+    watches for orders to be created,
+    cancels them after 15 miniutes
+payments
+    handles credit card payments. 
+    cancle orders if payments fails, completes if payment succeeds

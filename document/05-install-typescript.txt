@@ -1,0 +1,4 @@
+install 
+    typescript ts-node-dev express @types/express
+create tsconfig.json
+    tsc -init

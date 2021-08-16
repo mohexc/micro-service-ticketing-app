@@ -1,0 +1,16 @@
+Event
+    UserCreated, UserUpdate
+
+    OrderCreted, OrderCancelled, OrderExpired
+
+    TicketCreated, TicketUpdated
+
+    ChargeCreated
+
+Architecuture
+
+    nextjs  common <- auth(note + mongo)        -> nats Streaming Server
+    nextjs  common <- ticket(note + mongo)      -> nats Streaming Server
+    nextjs  common <- orders(note + mongo)      -> nats Streaming Server
+    nextjs  common <- payments(note + mongo)    -> nats Streaming Server
+    nextjs  common <- expiration(note + redis)  -> nats Streaming Server

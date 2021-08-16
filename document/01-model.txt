@@ -1,0 +1,19 @@
+User
+    email : string
+    pasword : string
+Ticket
+    title : string
+    price : number
+    userId : ref -> User
+    orderId : ref ->  Order
+Order
+    status : created | cancelled | awaitingPayment | Completed
+    expiresAt : Date
+    ticketId : ref -> Ticket
+    userId : ref -> user
+Change
+    status : Created | Failed | Completed
+    amount : number
+    stripeId : string
+    stripeRefundId : string
+    orderId : ref -> Order

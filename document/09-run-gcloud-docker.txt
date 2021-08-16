@@ -1,0 +1,6 @@
+Don't want to run Docker at all
+    Close Docker Destop
+    run -> gclund componets install kubectl
+    run -> gcloud container cluster get-credentials <cluster name>
+Still running Docker
+    run -> gcloud continer clusters get-credentials <cluster name>

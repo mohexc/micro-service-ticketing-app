@@ -1,0 +1,2 @@
+mac/linux -> /etc/hosts
+windows -> C:\Windows\System32\Drives\etc\hosts
